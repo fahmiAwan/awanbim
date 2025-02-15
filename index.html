@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>awanbim</title>
+</head>
+
+<body>
+   <div class="blur-overlay">
+      <img src="/img/website-under-construction.png" alt="">
+      <button class="enquiry-button" onclick="toggleEnquiryForm()">for enquiry click here</button>
+      <div class="overlay" id="overlay">
+         <div class="enquiry-container" id="enquiryForm">
+            <h2>Enquiry Form</h2>
+            <form class="enquiry-form" onsubmit="submitForm(event)">
+               <input type="text" name="name" placeholder="Your Name" required>
+               <input type="email" name="email" placeholder="Your Email" required>
+               <input type="tel" name="phone" placeholder="Your Phone (Optional)">
+               <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+               <button type="submit">Submit</button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
